@@ -32,7 +32,7 @@ function verify() {
 }
 verify()
 
-say('Sylphy', {
+say('Sumi Sakurasawa', {
   font: 'simple',
   align: 'left',
   gradient: ['green', 'white']
