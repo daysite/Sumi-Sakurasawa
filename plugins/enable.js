@@ -135,24 +135,24 @@ case 'noprefix':
     default:
       //if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage, { quoted: m })
       if (!/[01]/.test(command)) return m.reply(`
-☁️ \`໋≡ Lista de Opciones :\`
+\`໋🍭 Lista de Opciones :\`
 
-  乂 *ＡＤＭＩＮ*
--------------------------
+🍿 ADMINISTRADORES
+
  • welcome
  • antilink
  • detect 
  • antilag
  • document
  
-  乂 *ＯＷＮＥＲ*
--------------------------
+🍿 CREADORES
+
  • public
  • noprefix
  • solopv
  • sologp
 
-*📌 Ｅｊｅｍｐｌｏ :*
+*🍭 EJEMPLO :*
 *${usedPrefix}on* ${xx}welcome${xx}
 *${usedPrefix}off* ${xx}welcome${xx}
 `)
