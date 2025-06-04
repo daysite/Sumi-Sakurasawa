@@ -23,14 +23,14 @@
   ],
   "homepage": "readme.md",
   "author": {
-    "name": "FzTeis"
+    "name": "DevDaniel"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FzTeis/Simple_Bot-Wa.git"
+    "url": "git+https://github.com/daysite/Sumi-Sakurasawa"
   },
   "bugs": {
-    "url": "https://github.com/FzTeis"
+    "url": "https://github.com/DanielDiod"
   },
   "license": "MIT",
   "dependencies": {
