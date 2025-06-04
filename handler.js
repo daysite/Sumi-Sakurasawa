@@ -533,15 +533,15 @@ Para desactivar esta función, escriba
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '👑 Este comando solo puede ser utilizado por el *Creador del bot*',
-        owner: '🔱 Este comando solo puede ser utilizado por el *Dueño del Bot*',
-        mods: '🔰  Esta función es solo para *Para moderadores del Bot*',
-        premium: '💠 Este comando es solo para miembros *Premium*\n\nEscribe */premium* para más info',
-        group: '⚙️ ¡Este comando solo se puede usar en grupos!',
-        private: '📮 Este comando solo se puede usar en el chat *privado del Bot*',
-        admin: '🛡️ Este comando es solo para *Admins* del grupo',
-        botAdmin: '💥 ¡Para usar este comando debo ser *Administrador!*',
-        unreg: '📇 Regístrese para usar esta función  Escribiendo:\n\n*/reg nombre.edad*\n\n📌Ejemplo : */reg Fz.16*',
+        rowner: '🍭 Este comando solo puede ser utilizado por el *Creador del bot*',
+        owner: '🍭 Este comando solo puede ser utilizado por el *Dueño del Bot*',
+        mods: '🍭  Esta función es solo para *Para moderadores del Bot*',
+        premium: '🍭 Este comando es solo para miembros *Premium*\n\nEscribe */premium* para más info',
+        group: '🍭 ¡Este comando solo se puede usar en grupos!',
+        private: '🍭 Este comando solo se puede usar en el chat *privado del Bot*',
+        admin: '🍭 Este comando es solo para *Admins* del grupo',
+        botAdmin: '🍭 ¡Para usar este comando debo ser *Administrador!*',
+        unreg: '🍭 Regístrese para usar esta función  Escribiendo:\n\n🍭Ejemplo : */reg Daniel.18*',
         restrict: '🔐 Esta característica está *deshabilitada*'
     }[type]
     if (msg) return m.reply(msg)
