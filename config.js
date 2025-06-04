@@ -8,9 +8,9 @@ import axios from 'axios';
 import moment from 'moment-timezone';
 
 global.owner = [
-  ['5212431268546', "ɪ'ᴍ ғᴢ ~", true],
-  ['5212431085732'],
-  ["24580450156657"],
+  ['51994143761', "Daniel", true],
+  ['51994143761'],
+  ["51994143761"],
 ] 
 
 global.mods = [] 
@@ -29,11 +29,11 @@ global.APIKeys = {
 
 // Sticker WM & prefijo
 global.prefijo = ""; // déjalo en blanco para multi - prefijo
-global.packname = "ѕуℓρнιєттє'ѕ | αℓρнα ν1";
-global.footer = "ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ ɪ'ᴍ ғᴢ ~";
-global.wm = "ѕуℓρнιєттє'ѕ | αℓρнα ν1";
-global.author = "ɪ'ᴍ ғᴢ ~"
-global.link = 'https://chat.whatsapp.com/JQMyVsc8U4iEHi7qLFgYNH';
+global.packname = "Sumi Sakurasawa | Dev.Daniel";
+global.footer = "Sumi Sakurasawa | Dev.Daniel";
+global.wm = "Sumi Sakurasawa | Dev.Daniel";
+global.author = "Dev.Daniel"
+global.link = 'https://chat.whatsapp.com/CnN4LfY1LfB5RBbiNWOCct';
 global.logo = 'https://files.cloudmini.net/download/xO27.jpeg'; 
 
 global.wait = "\`Cargando . . . Espera un momento.\`"
