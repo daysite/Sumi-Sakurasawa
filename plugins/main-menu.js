@@ -89,15 +89,7 @@ let menu = `
 > 🍟 Terminal : Linux
 > ☁️ Librería : Baileys
 
-*•/• Información Bot •/•*
-
-☁️.owner
-☁️.totalfunciones
-☁️.velocidad 
-☁️.sistema 
-☁️.uptime
-
-*•/• Downloaders •/•*
+\`•/• Downloaders •/•\`
 
 🍄.facebook
 🍄.ytmp3 
@@ -114,32 +106,14 @@ let menu = `
 🍄.apk
 
 
-*•/• Searchs •/•*
-
-🎋.spotifysearch
-🎋.mercadolibre
-🎋.wikisearch
-🎋.google
-🎋.tiktokvid
-🎋.shazam
-🎋.yts
-🎋.pinterest
-🎋.tiktoksearch
-🎋.tiktokvid
-🎋.twittersearch
-🎋.applemusicsearch
-🎋.cloudsearch
-🎋.npmjssearct
-🎋.imagenes
-
-*•/• Al •/•*
+\`•/• Al •/•\`
 
 🍘.ia
 🍘.gemini
 🍘.bing
 🍘@ai
 
-*•/• Tools •/•*
+\`•/• Tools •/•*\`
 
 🍧.ssweb
 🍧.hd
@@ -153,31 +127,7 @@ let menu = `
 🍧.topgifaud
 🍧.topmp3
 
-*•/• Groups  •/•*
-
-🌼.enable
-🌼.disable
-🌼.unbanchat
-🌼.banchat
-🌼.promote
-🌼.demote
-🌼.delete
-🌼.tagall
-🌼.tag
-🌼.kick
-🌼.mute
-
-*•/• RPG  •/•*
-
-🌵.claim
-🌵.dulces
-🌵.crimen
-🌵.minar
-🌵.work
-🌵.verificar
-🌵.perfil
-
-*•/• Stickers •/•*
+\`•/• Stickers •/•\`
 
 🍥.sticker
 🍥.qc
