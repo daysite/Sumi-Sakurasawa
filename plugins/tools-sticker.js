@@ -64,7 +64,7 @@ ${usedPrefix + command} -c -blur Texto | Autor
       let img = await q.download?.()
 
       if (!img) {
-        return conn.reply(m.chat, `🌿 Responde a una *imagen/video/gif* para convertirlo en sticker. Para saber la lista de efectos y formas usa *"---i"*`, m)
+        return conn.reply(m.chat, `🍭 Responde a una *imagen/video/gif*`, m)
       }
 
       let out
