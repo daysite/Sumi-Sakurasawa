@@ -102,6 +102,9 @@ let menu = `
 🍃.mediafire
 🍃.gclone
 🍃.apk
+🍃.pornhub
+🍃.animedl
+🍃.gdrive
 
 
 \`•/• Al •/•\`
