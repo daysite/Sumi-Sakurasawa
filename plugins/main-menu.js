@@ -91,19 +91,17 @@ let menu = `
 
 \`•/• Downloaders •/•\`
 
-🍄.facebook
-🍄.ytmp3 
-🍄.ytmp4
-🍄.tiktok
-🍄.tiktokimg
-🍄.Spotifydl
-🍄.applemusicdl
-🍄.clouddl
-🍄.pinterestdl
-🍄.Instagram
-🍄.applemusic 
-🍄.souncloud
-🍄.apk
+🍃.facebook
+🍃.ytmp3 
+🍃.ytmp4
+🍃.tiktok
+🍃.tiktokimg
+🍃.Spotify
+🍃.pinterest
+🍃.Instagram
+🍃.mediafire
+🍃.gclone
+🍃.apk
 
 
 \`•/• Al •/•\`
