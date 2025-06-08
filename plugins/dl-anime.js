@@ -17,7 +17,7 @@ async function lang(episodes) {
 }
 
 let handler = async (m, { command, usedPrefix, conn, text, args }) => {
-    if (!text) return m.reply(`🌱 \`Ingresa el título de algún anime o la URL. Ejemplo:\`\n\n • ${usedPrefix + command} Mushoku Tensei\n • ${usedPrefix + command} https://animeav1.com/media/mushoku-tensei`);
+    if (!text) return m.reply(`🍭 \`Ingresa el título de algún anime o la URL. Ejemplo:\`\n\n • ${usedPrefix + command} One Picce\n • ${usedPrefix + command} https://animeav1.com/media/mushoku-tensei`);
 
     try {
         if (text.includes('https://animeav1.com/media/')) {
@@ -35,13 +35,13 @@ let handler = async (m, { command, usedPrefix, conn, text, args }) => {
             let cap = `
 乂 \`\`\`ANIME - DOWNLOAD\`\`\`
 
-≡ 🌷 \`Título :\` ${title} - ${altTitle}
-≡ 🌾 \`Descripción :\` ${description}
-≡ 🌲 \`Votos :\` ${votes}
-≡ 🍂 \`Rating :\` ${rating}
-≡ 🍃 \`Géneros :\` ${gen}
-≡ 🌱 \`Episodios totales :\` ${total}
-≡ 🌿 \`Episodios disponibles :\`
+🍔 \`Título :\` ${title} - ${altTitle}
+🍔 \`Descripción :\` ${description}
+🍔 \`Votos :\` ${votes}
+🍔 \`Rating :\` ${rating}
+🍔 \`Géneros :\` ${gen}
+🍔 \`Episodios totales :\` ${total}
+🍔 \`Episodios disponibles :\`
 
 ${eps}
 
@@ -68,7 +68,7 @@ ${eps}
 
             let cap = `◜ Anime - Search ◞\n`;
             results.slice(0, 15).forEach((res, index) => {
-                cap += `\n\`${index + 1}\`\n≡ 🌴 \`Title :\` ${res.title}\n≡ 🌱 \`Link :\` ${res.link}\n`;
+                cap += `\n\`${index + 1}\`\n🫧 \`Title :\` ${res.title}\n🫧 \`Link :\` ${res.link}\n`;
             });
 
             let buffer = await (await fetch(logo)).arrayBuffer();
@@ -100,7 +100,7 @@ handler.before = async (m, { conn }) => {
     const session = conn.anime[m.sender];
     if (!session || !m.quoted || m.quoted.id !== session.key.id) return;
 
-    if (session.downloading) return m.reply('⏳ Ya estás descargando un episodio. Espera a que termine.');
+    if (session.downloading) return m.reply('🍭 Ya estás descargando un episodio. Espera a que termine.');
 
     let [epStr, langInput] = m.text.trim().split(/\s+/);
     const epi = parseInt(epStr);
