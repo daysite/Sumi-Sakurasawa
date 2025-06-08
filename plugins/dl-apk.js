@@ -1,10 +1,10 @@
 import { search, download } from 'aptoide-scraper';
 
 let handler = async(m, { conn, text }) => {
-    if (!text) return m.reply('🌳 Por favor, proporciona el nombre de una aplicación');
+    if (!text) return m.reply('🍭 Por favor, proporciona el nombre de una aplicación');
 
     try {
-        let dta = await conn.reply(m.chat, `Buscando la aplicación . . .`, m);
+        let dta = await conn.reply(m.chat, `🍭 Buscando la aplicación . . .`, m);
         let results = await search(text);
 
         if (!results || results.length === 0) {
@@ -29,11 +29,11 @@ let handler = async(m, { conn, text }) => {
 
         const { name, package: id, size, icon: image, dllink: downloadUrl, lastup } = apkInfo;
 
-        let caption = `    乂 \`ᗩᑭK - ᗪOᗯᑎᒪOᗩᗪᗴᖇ\`\n\n`
-        caption += `≡ Nombre : ${name}\n`
-        caption += `≡ ID : ${id}\n`
-        caption += `≡ Tamaño : ${size}\n`
-        caption += `≡ Última Actualización : ${lastup}\n\n`
+        let caption = `    🍄 \`APK - DOWNLOADER\`\n\n`
+        caption += `🌵 Nombre : ${name}\n`
+        caption += `🌵 ID : ${id}\n`
+        caption += `🌵 Tamaño : ${size}\n`
+        caption += `🌵 Última Actualización : ${lastup}\n\n`
         caption += footer
         
             await conn.sendMessage(m.chat, {
