@@ -1,7 +1,7 @@
 import { fetch } from "undici"
 let handler = async (m, { conn, usedPrefix, command, args }) => {
     try {
-        if (!args[0]) return m.reply(`🌿 Ejemplo de uso: ${usedPrefix + command} https://www.facebook.com/share/v/1FwfwCUQEv/`);
+        if (!args[0]) return m.reply(`🍭 Ejemplo de uso: ${usedPrefix + command} https://www.facebook.com/share/v/1FwfwCUQEv/`);
         if (!args[0].match(/(?:https?:\/\/(web\.|www\.|m\.)?(facebook|fb)\.(com|watch)\S+)?$/)) {
             return m.reply("Enlace inválido. Asegúrate de que sea un enlace de Facebook válido.");
         }
