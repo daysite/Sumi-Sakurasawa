@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text, args }) => { 
    try {
       if (!text) {
-         return conn.reply(m.chat, `🌱 Ejemplo de uso: apkpure WhatsApp`, m);
+         return conn.reply(m.chat, `🍭 Ejemplo de uso: apkpure WhatsApp`, m);
       }
       m.react('🕒');
       if (text.includes('https://apkpure.net/')) {
@@ -20,9 +20,9 @@ let handler = async (m, { conn, text, args }) => {
             let cap = `
 ◜ ApkPure - Download ◞
 
-≡ 🌴 \`Nombre :\` ${name}
-≡ 🌿 \`Package :\` ${base}
-≡ 🌾 \`Peso :\` ${sizeMB}
+🍿 \`Nombre :\` ${name}
+🍿 \`Package :\` ${base}
+🍿 \`Peso :\` ${sizeMB}
 
 ≡ 🌷 \`Link :\` ${args[0]}
 `;
