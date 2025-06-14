@@ -21,7 +21,7 @@ const handler = async (m, { conn, text, command }) => {
 🫧 \`Vistas\` : ${video.views}
 🫧 \`URL\`      : ${video.url}
 
-Espere un momento  @${m.sender.split("@")[0]} soy lenta...
+*Espere un momento  @${m.sender.split("@")[0]} soy lenta... 🐢*
 `;
     await conn.sendFile(m.chat, await (await fetch(video.thumbnail)).buffer(), "image.jpg", cap, m);
 
