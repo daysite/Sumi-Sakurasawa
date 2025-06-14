@@ -15,13 +15,13 @@ const handler = async (m, { conn, text, command }) => {
     const cap = `
 \`\`\`⊜─⌈ 📻 ◜YouTube Play◞ 📻 ⌋─⊜\`\`\`
 
-≡ 🌿 \`Título\` : » ${video.title}
-≡ 🌾 \`Author\` : » ${video.author.name}
-≡ 🌱 \`Duración\` : » ${video.duration.timestamp}
-≡ 🌴 \`Vistas\` : » ${video.views}
-≡ ☘️ \`URL\`      : » ${video.url}
+🫧 \`Título\` : ${video.title}
+🫧 \`Author\` : ${video.author.name}
+🫧 \`Duración\` : ${video.duration.timestamp}
+🫧 \`Vistas\` : ${video.views}
+🫧 \`URL\`      : ${video.url}
 
-тнe вeѕт wнaтѕapp вy ι'м ғz
+Espere un momento  @${m.sender.split("@")[0]} soy lenta...
 `;
     await conn.sendFile(m.chat, await (await fetch(video.thumbnail)).buffer(), "image.jpg", cap, m);
 
