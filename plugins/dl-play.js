@@ -13,7 +13,7 @@ const handler = async (m, { conn, text, command }) => {
     let total = Number(video.duration.seconds) || 0;
 
     const cap = `
-\`\`\`⊜─⌈ 📻 ◜YouTube Play◞ 📻 ⌋─⊜\`\`\`
+\`\`\`Y O U T U B E - M U S I C\`\`\`
 
 🫧 \`Título\` : ${video.title}
 🫧 \`Author\` : ${video.author.name}
