@@ -17,8 +17,8 @@ let crm3 = "SBpbmZvLWRvbmFyLmpz"
 let crm4 = "IF9hdXRvcmVzcG9uZGVyLmpzIGluZm8tYm90Lmpz"
 let drm1 = ""
 let drm2 = ""
-let rtx = "╭  ✦ Connection Pairing Code ✦  ╮\n📍 *Se usa de la siguiente manera:*\n1. Haz clic en los tres puntos *( ⋮ )* en la esquina superior derecha\n2. Toca *Dispositivos Vinculados*\n3. *Vincular un dispositivo*\n4. *Vincular con el número de teléfono*\n"
-let rtx2 = "╭  ✦ Connection Pairing Code ✦  ╮\n📍 *Se usa de la siguiente manera:*\n1. Haz clic en los tres puntos *( ⋮ )* en la esquina superior derecha\n2. Toca *Dispositivos Vinculados*\n3. *Vincular un dispositivo*\n4. *Vincular con el número de teléfono*"
+let rtx = "╭  ✦ Connection Pairing Code ✦  ╮\n\n📍 *Se usa de la siguiente manera:*\n1. Haz clic en los tres puntos *( ⋮ )* en la esquina superior derecha\n2. Toca *Dispositivos Vinculados*\n3. *Vincular un dispositivo*\n4. *Vincular con el número de teléfono*\n"
+let rtx2 = "╭  ✦ Connection Pairing Code ✦  ╮\n\n📍 *Se usa de la siguiente manera:*\n1. Haz clic en los tres puntos *( ⋮ )* en la esquina superior derecha\n2. Toca *Dispositivos Vinculados*\n3. *Vincular un dispositivo*\n4. *Vincular con el número de teléfono*"
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
