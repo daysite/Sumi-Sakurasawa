@@ -54,20 +54,18 @@ const handler = async (m, { conn, text }) => {
     }
 
     const cap = `
-\`\`\`╭  ✦  ◜Spotify Play◞  ✦  ╮ \`\`\`
+\`\`\`╭  ✦ ◜Spotify Play◞ ✦  ╮ \`\`\`
 
-≡ Título      : » ${track.name}
-≡ Artista     : » ${track.artists.map((a) => a.name).join(", ")}
-≡ Álbum       : » ${track.album.name}
-≡ Fecha       : » ${track.album.release_date}
-≡ Popularidad : » ${track.popularity}/100
-≡ Duración    : » ${(track.duration_ms / 60000).toFixed(2)} min
-≡ ISRC        : » ${track.external_ids?.isrc || "No disponible"}
-≡ URL         : » ${track.external_urls.spotify}
+⛱️ Título      : » ${track.name}
+🎭 Artista     : » ${track.artists.map((a) => a.name).join(", ")}
+⛺ Álbum       : » ${track.album.name}
+🗓️ Fecha       : » ${track.album.release_date}
+🗳️ Popularidad : » ${track.popularity}/100
+⌛ Duración    : » ${(track.duration_ms / 60000).toFixed(2)} min
+📿 ISRC        : » ${track.external_ids?.isrc || "No disponible"}
+🔎 URL         : » ${track.external_urls.spotify}
 
-# 🌴 Su audio se enviará en un momento...
-
-тнe вeѕт wнaтѕapp вy ι'м ғz
+*🌴 Un momento suelo ser muy lenta...*
 `;
 await m.reply(cap);
 
