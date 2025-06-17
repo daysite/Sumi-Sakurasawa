@@ -33,7 +33,7 @@ const searchTrack = async (query, token) => {
 };
 
 const handler = async (m, { conn, text }) => {
-  if (!text) return m.reply("🌴 Ingresa el nombre de una canción o una URL de Spotify.");
+  if (!text) return m.reply("🍭 Ingresa el nombre de una canción o una URL de Spotify.");
 
   await conn.sendMessage(m.chat, { react: { text: "🍁", key: m.key } });
 
@@ -54,7 +54,7 @@ const handler = async (m, { conn, text }) => {
     }
 
     const cap = `
-\`\`\`⊜─⌈ 📻 ◜Spotify Play◞ 📻 ⌋─⊜
+\`\`\`╭  ✦  ◜Spotify Play◞  ✦  ╮ \`\`\`
 
 ≡ Título      : » ${track.name}
 ≡ Artista     : » ${track.artists.map((a) => a.name).join(", ")}
@@ -66,7 +66,6 @@ const handler = async (m, { conn, text }) => {
 ≡ URL         : » ${track.external_urls.spotify}
 
 # 🌴 Su audio se enviará en un momento...
-\`\`\`
 
 тнe вeѕт wнaтѕapp вy ι'м ғz
 `;
