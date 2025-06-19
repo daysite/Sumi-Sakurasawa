@@ -6,12 +6,12 @@ let tes = results.videos
 let ms = tes.map(v => `
 ° ${v.title}
 
-⌛ \`Duración :\` ${v.timestamp}
-🗳️ \`Subido :\` ${v.ago}
-🎭 \`Vistas :\` ${v.views.toLocaleString()}
-🔎 \`Link :\` ${v.url}
+≡◦ *🕜 Duración ∙* ${v.timestamp}
+≡◦ *🪴 Publicado ∙* ${v.ago}
+≡◦ *🐢 Vistas ∙* ${v.views.toLocaleString()}
+≡◦ *⛓ Url ∙* ${v.url}
 `.trim()).join('\n________________________\n\n')
-let teks = `\`\`\`YOUTUBE - SEARCH\`\`\`\n\n${ms}`
+let teks = `\`\`\`╭─⬣「 YouTube Search 」⬣\`\`\`\n\n${ms}`
 conn.sendFile(m.chat, tes[0].image, 'yts.jpeg', teks, m)
 }
 handler.help = ['ytsearch'] 
