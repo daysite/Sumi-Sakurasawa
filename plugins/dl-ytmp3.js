@@ -4,7 +4,7 @@ import yts from "yt-search";
 let handler = async(m, { conn, text, args }) => {
     const youtubeRegex = /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/|youtube\.com\/(?:v|e(?:mbed)?)\/|youtube\.com\/watch\?v=)([a-zA-Z0-9_-]{11})|(?:https?:\/\/)?(?:www\.)?youtube\.com\/shorts\/([a-zA-Z0-9_-]{11})/;
     if (!text || !youtubeRegex.test(text)) {
-        return conn.reply(m.chat, `🌱 Uso correcto : ytmp3 https://youtube.com/watch?v=DLh9mnfZvc0`, m);
+        return conn.reply(m.chat, `🍭 Uso correcto : ytmp3 https://youtube.com/watch?v=DLh9mnfZvc0`, m);
     }
     try {
         m.react('⏳');        
@@ -14,17 +14,12 @@ let handler = async(m, { conn, text, args }) => {
         if (!video.url) return conn.reply(m.chat, `No se encontró el video.`, m);
         const mp3 = await ytdl(video.url, "mp3")
         let cap = `
-\`\`\`
-⊜─⌈ 📻 ◜YouTube MP3◞ 📻 ⌋─⊜
+\`\`\`╭─⬣「 YouTube Download 」\`\`\`
 
-≡ 🎵 Título : ${video.title}
-≡ 📺 Canal : ${video.author.name}
-≡ ⏳ Duración : ${video.timestamp}
-≡ 👀 Vistas : ${video.views.toLocaleString()}
-≡ 📅 Publicado : ${video.ago}
-≡ 🔗 Enlace : ${video.url}
-≡ 🌳 Calidad : 320kbps
-\`\`\`
+≡◦ *🍭 Titulo ∙* ${video.title}
+≡◦ *⌛ Duración ∙* ${video.timestamp}
+≡◦ *🪴 Calidad ∙* 320kbps
+
 ≡ Enviando como : ${isDoc ? "Documento" : "Audio"}
 `;
 m.reply(cap)
@@ -33,7 +28,7 @@ conn.sendFile(m.chat, mp3.result.download, `${video.title}.mp3`, "", m, null, { 
         m.react('✅');
     } catch (error) {
         console.error(error); 
-        return conn.reply(m.chat, `Error al descargar el audio.\n\n` + error, m);
+        return conn.reply(m.chat, `🍭 Error al descargar el audio.\n\n` + error, m);
     }
 };
 
