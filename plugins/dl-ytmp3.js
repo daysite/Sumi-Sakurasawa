@@ -4,7 +4,7 @@ import yts from "yt-search";
 let handler = async(m, { conn, text, args }) => {
     const youtubeRegex = /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/|youtube\.com\/(?:v|e(?:mbed)?)\/|youtube\.com\/watch\?v=)([a-zA-Z0-9_-]{11})|(?:https?:\/\/)?(?:www\.)?youtube\.com\/shorts\/([a-zA-Z0-9_-]{11})/;
     if (!text || !youtubeRegex.test(text)) {
-        return conn.reply(m.chat,'🍭 Ingresa el enlace del vídeo de YouTube junto al comando.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* https://youtu.be/QSvaCSt8ixs', m);
+        return conn.reply(m.chat,`🍭 Ingresa el enlace del vídeo de YouTube junto al comando.\n\nEjemplo:\n + > *${usedPrefix + command}* https://youtu.be/QSvaCSt8ixs`, m);
     }
     try {
         m.react('⏳');        
