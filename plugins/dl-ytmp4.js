@@ -23,17 +23,11 @@ let handler = async (m, { conn, text, args }) => {
         if (!video || !video.url) return conn.reply(m.chat, `No se encontró el video.`, m)
         const isDoc = /doc$/.test(text)
         const cap = `
-\`\`\`
-⊜─⌈ 📻 ◜YouTube MP4◞ 📻 ⌋─⊜
+\`\`\`╭─⬣「 *YouTube Download* 」⬣\`\`\`
 
-≡ 🎵 Título : ${video.title}
-≡ 📺 Canal : ${video.author.name}
-≡ ⏳ Duración : ${video.timestamp}
-≡ 👀 Vistas : ${video.views.toLocaleString()}
-≡ 📅 Publicado : ${video.ago}
-≡ 🔗 Enlace : ${video.url}
-≡ 🌳 Calidad : ${args[1] || "360"}
-\`\`\`
+≡◦ *🍭 Titulo ∙* ${video.title}
+≡◦ *🗓️ Publicado ∙* ${video.ago}
+≡◦ *🪴 Calidad ∙* ${args[1] || "360"}
   ${footer}
 `
         if (isDoc) m.reply(cap)
