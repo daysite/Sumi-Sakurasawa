@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, command, usedPrefix, args, text }) => {
-  if (!text) return conn.reply(m.chat, '[ ✰ ] Ingrese el nombre de la canción de *Soundcloud.*\n\n' + '`Ejemplo:`\n' + `> *${usedPrefix + command}* Die With A Smile`, m)
+  if (!text) return conn.reply(m.chat, '🍭 Ingrese el nombre de la canción de *Soundcloud.*\n\n' + '`Ejemplo:`\n' + `> *${usedPrefix + command}* Die With A Smile`, m)
   
   await m.react('🕒')
   try {
