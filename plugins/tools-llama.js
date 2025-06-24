@@ -20,6 +20,6 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 handler.help = ['blackbox *<petición>*']
 handler.tags = ['tools']
 handler.command = ['llama']
-handler.register = true
+handler.register = false
 
 export default handler
