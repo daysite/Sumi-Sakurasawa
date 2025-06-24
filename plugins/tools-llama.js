@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-    if (!text) return conn.reply(m.chat, `*🍭 Ingrese su petición*\n*🪼 Ejemplo de uso:* ${usedPrefix + command} como hacer estrella de papel`, m, rcanal)
+    if (!text) return conn.reply(m.chat, `*🍭 Ingrese su petición*\n*🪼 Ejemplo de uso:* ${usedPrefix + command} como hacer estrella de papel`, m)
     await m.react('💬')
 
     try {
@@ -9,7 +9,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
         let json = await api.json()
 
         if (json.results) {
-            await conn.reply(m.chat, json.results, m, rcanal)
+            await conn.reply(m.chat, json.results, m)
         } else {
             await m.react('✖️')
         }
