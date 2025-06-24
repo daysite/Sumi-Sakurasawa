@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text }) => {
       try {
          if (!text) {
-            return conn.reply(m.chat, `🌷 Ejemplo de uso: inspect https://whatsapp.com/channel/0029Va6InNBFCCoM9xzKFG3G`, m);
+            return conn.reply(m.chat, `🍭 Ingrese el *Link* del canal de WhatsApp`, m);
          }
 
          if (text.includes('https://whatsapp.com/channel/')) {
@@ -25,11 +25,11 @@ mentionedJid: conn.parseMention(i.inf),
             await await await m.reply(i.id);
             m.react("☑️");
          } else {
-            return conn.reply(m.chat, `🌱 Ingresa un link válido.`, m);
+            return conn.reply(m.chat, `🍭 Ingresa un link válido.`, m);
          }
       } catch (error) {
          console.error(error);
-         await conn.reply(m.chat, `Error al obtener la información del canal: ${error.message}`, m);
+         await conn.reply(m.chat, `🍭 Error al obtener la información del canal: ${error.message}`, m);
       }
    }
 handler.command = ["inspector", "inspect", "id"]
@@ -51,18 +51,18 @@ async function getInfo(conn, url) {
         let txt = `
             ◜ *Channel - Info* ◞
 
-≡ 🌴 *Nombre:* ${info.name}
-≡ 🌿 *ID:* ${info.id}
-≡ 🌾 *Estado:* ${info.state}
-≡ 📅 *Creado:* ${fechaFormato}
+🎭 *Nombre:* ${info.name}
+🎐 *ID:* ${info.id}
+⛺ *Estado:* ${info.state}
+📅 *Creado:* ${fechaFormato}
 
-≡ 🗃️ *Enlace:*
+🔎 *Enlace:*
 - https://whatsapp.com/channel/${info.invite}
 
-≡ 🍄 *Seguidores:* ${info.subscribers}
-≡ 🎍 *Verificación:* ${info.verified ? "✅ Sí" : "❌ No"}
+🍿 *Seguidores:* ${info.subscribers}
+📿 *Verificación:* ${info.verified ? "✅ Sí" : "❌ No"}
 
-≡ 🌷 *Descripción:* 
+🫧 *Descripción:* 
 ${info.description || "Sin descripción"}
 
 ${footer}
