@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, command, usedPrefix, args, text }) => {
-  if (!text) return conn.reply(m.chat, '[ ✰ ] Ingrese el nombre de la canción de *Soundcloud.*\n\n' + '`Ejemplo:`\n' + `> *${usedPrefix + command}* Die With A Smile`, m, rcanal)
+  if (!text) return conn.reply(m.chat, '[ ✰ ] Ingrese el nombre de la canción de *Soundcloud.*\n\n' + '`Ejemplo:`\n' + `> *${usedPrefix + command}* Die With A Smile`, m)
   
   await m.react('🕒')
   try {
@@ -32,5 +32,5 @@ let handler = async (m, { conn, command, usedPrefix, args, text }) => {
 handler.help = ['soundcloud *<búsqueda>*']
 handler.tags = ['downloader']
 handler.command = ['soundcloud', 'sound']
-handler.register = true
+handler.register = false
 export default handler
